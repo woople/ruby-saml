@@ -25,8 +25,8 @@ module Onelogin
         @document = XMLSecurity::SignedDocument.new(@response)
       end
 
-      def is_valid?
-        validate
+      def is_valid?(options = {})
+        validate(options)
       end
 
       def validate!
@@ -114,11 +114,11 @@ module Onelogin
         raise ValidationError.new(message)
       end
 
-      def validate(soft = true)
+      def validate(soft = true, options = {})
         validate_structure(soft)      &&
         validate_response_state(soft) &&
         validate_conditions(soft)     &&
-        document.validate(get_fingerprint, soft) && 
+        document.validate(get_fingerprint, soft, options) &&
         success?
       end
 

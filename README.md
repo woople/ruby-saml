@@ -4,6 +4,17 @@ The Ruby SAML library is for implementing the client side of a SAML authorizatio
 
 SAML authorization is a two step process and you are expected to implement support for both.
 
+## Woople
+
+This gem is our forked version because enterprises suck and we need changes that 
+don't need to be included for anyone else.
+
+### Blue Cross and the :skip_document_validation option
+
+This exists for Blue cross since the XML they send us doesn't conform to our standards.
+Because there is no way to reconcile this we simply don't check document 
+validation for them.
+
 ## The initialization phase
 
 This is the first request you will get from the identity provider. It will hit your application at a specific URL (that you've announced as being your SAML initialization point). The response to this initialization, is a redirect back to the identity provider, which can look something like this (ignore the saml_settings method call for now):
