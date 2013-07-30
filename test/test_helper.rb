@@ -56,6 +56,10 @@ class Test::Unit::TestCase
     Base64.encode64(doc)
   end
 
+  def bcbst_response
+    @bcbst_response ||= File.read(File.join(File.dirname(__FILE__), 'responses', 'bcbst_response.xml'))
+  end
+
   def wrapped_response_2
     @wrapped_response_2 ||= File.read(File.join(File.dirname(__FILE__), 'responses', 'wrapped_response_2.xml.base64'))
   end
@@ -70,6 +74,10 @@ class Test::Unit::TestCase
 
   def r1_signature_2
     @signature2 ||= File.read(File.join(File.dirname(__FILE__), 'certificates', 'r1_certificate2_base64'))
+  end
+
+  def bcbst_fingerprint
+    @bcbst_fingerprint ||= 'D2:D6:4D:A8:67:01:C8:50:23:D7:69:6B:48:F1:85:53:B7:7D:61:80'
   end
 
 end

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" Destination="bcbst.testwoople.com" ID="ghvpei47d9rjte1kjobmtonfgm" IssueInstant="2013-07-29T18:36:01.629Z" Version="2.0">
+   <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">idp_bcbstn</saml2:Issuer>
+   <saml2p:Status>
+      <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+   </saml2p:Status>
+   <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema" ID="88ld8g1gdv8l2d1dlr4hcmg4pf" IssueInstant="2013-07-29T18:36:01.700Z" Version="2.0">
+      <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">idp_bcbstn</saml2:Issuer>
+      <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+         <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <ds:Reference URI="#88ld8g1gdv8l2d1dlr4hcmg4pf">
+               <ds:Transforms>
+                  <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                  <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                     <ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="xs"/>
+                  </ds:Transform>
+               </ds:Transforms>
+               <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+               <ds:DigestValue>cnfH3dUeLvgUf/F5LWN8/UWESLk=</ds:DigestValue>
+            </ds:Reference>
+         </ds:SignedInfo>
+         <ds:SignatureValue>jT3hCkpjh37Pvk1bNMJQN6My6LTOfZ5fMfaflTEhNl+EwyvkrGRLnl0lS+OTzKwhL8ixaqFs6Am/MeD+RDs8aY3Y/vecvIki2rgGp4DJV+ssB6tgiOB+6ucxpXotIzYPMCsPjaAOlUPZY/yoaJX4BguFkvcNovulbGAIaIUroOoTd6P28H89ExrULWAypBcajdO9gGKDHRSrhy7+Ct9i/jq8r4kyZLyAVU+yfKR6gmQVGEdxE7BQMVJ/Zo/qBUo5GJvZwqgsoAqRx8VVwSmTkOu4K6jSfBUJpsXr4hrw31Knys8AnAHgHdD+vc+YcNibpE8eGpMEdhmyEh3MsB4C9g==</ds:SignatureValue>
+         <ds:KeyInfo>
+            <ds:X509Data>
+               <ds:X509Certificate>MIIFPjCCBCagAwIBAgIETB5FrDANBgkqhkiG9w0BAQUFADCBsTELMAkGA1UEBhMCVVMxFjAUBgNV
+BAoTDUVudHJ1c3QsIEluYy4xOTA3BgNVBAsTMHd3dy5lbnRydXN0Lm5ldC9ycGEgaXMgaW5jb3Jw
+b3JhdGVkIGJ5IHJlZmVyZW5jZTEfMB0GA1UECxMWKGMpIDIwMDkgRW50cnVzdCwgSW5jLjEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxQzAeFw0xMjExMDgxOTU2
+MThaFw0xNDExMDkyMTQ2NTBaMIGLMQswCQYDVQQGEwJVUzESMBAGA1UECBMJVGVubmVzc2VlMRQw
+EgYDVQQHEwtDaGF0dGFub29nYTEsMCoGA1UEChMjQmx1ZSBDcm9zcyBCbHVlIFNoaWVsZCBvZiBU
+ZW5uZXNzZWUxJDAiBgNVBAMTG3Rlc3QuYXBwbGljYXRpb25zLmJjYnN0LmNvbTCCASIwDQYJKoZI
+hvcNAQEBBQADggEPADCCAQoCggEBAMMG77vXuHPOCYf2DLt5G46RVQE7KKLIRpfa9P7hH4W5Mc4G
+tmwzoPLDx0XuhHc2AgYGgzUIJfC3Jw9wn7ISHVKcbYwsD3aTw+4HlWp8mLx2CSq5Y0ViCtB6/7JV
+c+i7DsCbDH1Q7b9vQb4b4IoPEQKlW9GMNuxW3xy3+psTiBWN0Qk9urxzr+rro2FT2x3pek5p85ne
+MZfHiGj3VB/yZ+5XSw06xLSWwxlfcn5fs5wtWDaaxQwoSnGsCGvr2j2Uxknrmu6KcilVlPUws+iZ
+yui3L6377McRZT+/gZnOT7i0H4s+TpKNOIOKulTJPl5QvzZFETcp0yOP6+wInbQCdfkCAwEAAaOC
+AYAwggF8MAsGA1UdDwQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAzBgNVHR8ELDAqMCigJqAk
+hiJodHRwOi8vY3JsLmVudHJ1c3QubmV0L2xldmVsMWMuY3JsMGQGCCsGAQUFBwEBBFgwVjAjBggr
+BgEFBQcwAYYXaHR0cDovL29jc3AuZW50cnVzdC5uZXQwLwYIKwYBBQUHMAKGI2h0dHA6Ly9haWEu
+ZW50cnVzdC5uZXQvMjA0OC1sMWMuY2VyMEoGA1UdIARDMEEwNQYJKoZIhvZ9B0sCMCgwJgYIKwYB
+BQUHAgEWGmh0dHA6Ly93d3cuZW50cnVzdC5uZXQvcnBhMAgGBmeBDAECAjAmBgNVHREEHzAdght0
+ZXN0LmFwcGxpY2F0aW9ucy5iY2JzdC5jb20wHwYDVR0jBBgwFoAUHvGriQb4SQ8BM3fuFHruGXyT
+KE0wHQYDVR0OBBYEFNdz9ojOE00zADZDXaMVbJlGKnKCMAkGA1UdEwQCMAAwDQYJKoZIhvcNAQEF
+BQADggEBAAsNqheZsXly2ME8gnwzzGBbNs6SEJ/HVR1L0s58c5r0p5r+ceC/3+ecREMM7yO2V5WE
+IcgfMbgtnDQLoy8Squq5KBOEIjmi5W8oFz0a/ZDnBb8vDTTHLrGFXJoovh6080ENxpslyIri0aia
+Ei2GdKszlmL5D8QFKU49amDJjPDZpYeqQTwJRnrOHn60xcwmmZpcwMVTs0GKS/9ZYDloW71YH3yQ
+HrxkSqyCIvtgrcneFkBrYBgPopAmLdqpuAtjwF9Yd6UgGLcoAZYr/bI/GNKbYVMORRAnsi/K8v5V
+JsI3XjtnDuYERCC67OlH8VpgKCOJkfN96trdtfiYjKEH2jc=</ds:X509Certificate>
+            </ds:X509Data>
+         </ds:KeyInfo>
+      </ds:Signature>
+      <saml2:Subject>
+         <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">bcbstuser</saml2:NameID>
+         <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+            <saml2:SubjectConfirmationData NotOnOrAfter="2013-07-29T18:38:01.700Z" Recipient="https://bcbst.testwoople.com/samlsso/consume"/>
+         </saml2:SubjectConfirmation>
+      </saml2:Subject>
+      <saml2:Conditions NotBefore="2013-07-29T18:35:01.700Z" NotOnOrAfter="2013-07-29T18:40:01.700Z">
+         <saml2:AudienceRestriction>
+            <saml2:Audience>bcbst.testwoople.com</saml2:Audience>
+         </saml2:AudienceRestriction>
+      </saml2:Conditions>
+      <saml2:AuthnStatement AuthnInstant="2013-07-29T18:36:01.703Z">
+         <saml2:AuthnContext>
+            <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</saml2:AuthnContextClassRef>
+         </saml2:AuthnContext>
+      </saml2:AuthnStatement>
+      <saml2:AttributeStatement>
+         <saml2:Attribute Name="lastname">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Calhoun</saml2:AttributeValue>
+         </saml2:Attribute>
+         <saml2:Attribute Name="firstname">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Matthew</saml2:AttributeValue>
+         </saml2:Attribute>
+         <saml2:Attribute Name="email">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Matthew_Calhoun@bcbst.com</saml2:AttributeValue>
+         </saml2:Attribute>
+      </saml2:AttributeStatement>
+   </saml2:Assertion>
+</saml2p:Response>

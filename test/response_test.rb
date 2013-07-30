@@ -151,6 +151,21 @@ class RubySamlTest < Test::Unit::TestCase
         response.settings = settings
         assert_raises(Onelogin::Saml::ValidationError, 'Digest mismatch'){ response.validate! }
       end
+
+
+      # This is a bit of a punt because this response won't pass without
+      # skipping the document validation.  So we are inferring that the test is 
+      # valid only because without that method we would fail.
+      should "skip document validation when option is specified" do
+        resp_xml = bcbst_response
+        response = Onelogin::Saml::Response.new(resp_xml)
+        response.stubs(:conditions).returns(nil)
+        settings = Onelogin::Saml::Settings.new
+        settings.idp_cert_fingerprint = bcbst_fingerprint
+        response.settings = settings
+
+        assert response.is_valid?(:skip_document_validation => true)
+      end
     end
 
     context "#name_id" do

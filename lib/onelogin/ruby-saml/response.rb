@@ -26,7 +26,7 @@ module Onelogin
       end
 
       def is_valid?(options = {})
-        validate(options)
+        validate(true, options)
       end
 
       def validate!
@@ -115,11 +115,19 @@ module Onelogin
       end
 
       def validate(soft = true, options = {})
-        validate_structure(soft)      &&
-        validate_response_state(soft) &&
-        validate_conditions(soft)     &&
-        document.validate(get_fingerprint, soft, options) &&
-        success?
+        if options[:skip_document_validation]
+          validate_response_state(soft) &&
+          validate_conditions(soft)     &&
+          document.validate(get_fingerprint, soft, options) &&
+          success?
+        else
+          validate_structure(soft)      &&
+          validate_response_state(soft) &&
+          validate_conditions(soft)     &&
+          document.validate(get_fingerprint, soft, options) &&
+          success?
+        end
+
       end
 
       def validate_structure(soft = true)

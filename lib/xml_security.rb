@@ -59,10 +59,14 @@ module XMLSecurity
         return soft ? false : (raise Onelogin::Saml::ValidationError.new("Fingerprint mismatch"))
       end
 
-      validate_doc(base64_cert, soft) unless options[:skip_document_validation]
+      unless options[:skip_document_validation]
+        validate_doc(base64_cert, soft)
+      else
+        true
+      end
     end
 
-    def validate_doc(base64_cert, soft = true, options = {})
+    def validate_doc(base64_cert, soft = true)
       # validate references
 
       # check for inclusive namespaces
