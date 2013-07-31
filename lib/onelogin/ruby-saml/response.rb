@@ -29,8 +29,8 @@ module Onelogin
         validate(true, options)
       end
 
-      def validate!
-        validate(false)
+      def validate!(options = {})
+        validate(false, options)
       end
 
       # The value of the user identifier as designated by the initialization request response
